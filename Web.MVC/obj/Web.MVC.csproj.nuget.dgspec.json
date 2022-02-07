@@ -1,0 +1,352 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj": {}
+  },
+  "projects": {
+    "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj",
+        "projectName": "Domain.Entities",
+        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj",
+        "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
+        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.DataAnnotations": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+        "projectName": "Domain.Interfaces",
+        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
+        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
+        "projectName": "Infrastructure.Data.MSSQL",
+        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
+        "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
+        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
+                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj"
+              },
+              "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
+        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
+                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj"
+              },
+              "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj",
+        "projectName": "Web.MVC",
+        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj",
+        "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
+        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {
+                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj"
+              },
+              "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj": {
+                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

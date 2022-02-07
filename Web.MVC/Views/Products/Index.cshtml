@@ -1,0 +1,185 @@
+﻿@model PaginatedList<Domain.Entities.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: <input type="text" name="keyword" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-outline-success" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index"
+                    asp-route-sort_order="@ViewData["NameSortParm"]"
+                    asp-route-page="@Model.PageIndex"
+                    asp-route-keyword="@ViewData["CurrentFilter"]"
+                    asp-route-page_size="@ViewData["CurrentPageSize"]"
+                    >Name</a>
+            </th>
+            <th>
+                <a asp-action="Index"
+                    asp-route-sort_order="@ViewData["PhoneSortParm"]"
+                    asp-route-page="@Model.PageIndex"
+                    asp-route-keyword="@ViewData["CurrentFilter"]"
+                    asp-route-page_size="@ViewData["CurrentPageSize"]"
+                    >Phone</a>
+            </th>
+            <th>
+                <a asp-action="Index"
+                    asp-route-sort_order="@ViewData["EmailSortParm"]"
+                    asp-route-page="@Model.PageIndex"
+                    asp-route-keyword="@ViewData["CurrentFilter"]"
+                    asp-route-page_size="@ViewData["CurrentPageSize"]"
+                    >Email</a>
+            </th>
+            <th>
+                <a asp-action="Index"
+                    asp-route-sort_order="@ViewData["TextSortParm"]"
+                    asp-route-page="@Model.PageIndex"
+                    asp-route-keyword="@ViewData["CurrentFilter"]"
+                    asp-route-page_size="@ViewData["CurrentPageSize"]"
+                    >Text</a>
+            </th>
+            <th>
+                <a asp-action="Index"
+                    asp-route-sort_order="@ViewData["CurrencySortParm"]"
+                    asp-route-page="@Model.PageIndex"
+                    asp-route-keyword="@ViewData["CurrentFilter"]"
+                    asp-route-page_size="@ViewData["CurrentPageSize"]"
+                    >Currency</a>
+            </th>
+            <th>
+                <a asp-action="Index"
+                    asp-route-sort_order="@ViewData["CategoryIdSortParm"]"
+                    asp-route-page="@Model.PageIndex"
+                    asp-route-keyword="@ViewData["CurrentFilter"]"
+                    asp-route-page_size="@ViewData["CurrentPageSize"]"
+                    >Category</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Currency)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    var topDisabled = Model.PageIndex == 1 ? "disabled" : "";
+    var bottomtDisabled = Model.PageIndex == Model.TotalPages ? "disabled" : "";
+    string isCurrentPage(int pageNumber)
+    {
+        return pageNumber == Model.PageIndex ? "btn-outline-danger" : "btn-outline-dark";
+    };
+}
+
+
+<a asp-action="Index"
+    asp-route-sort_order="@ViewData["CurrentSort"]"
+    asp-route-page="1"
+    asp-route-keyword="@ViewData["CurrentFilter"]"
+    asp-route-page_size="@ViewData["CurrentPageSize"]"
+    class="btn btn-outline-dark @topDisabled">
+        <<
+</a>
+<a asp-action="Index"
+    asp-route-sort_order="@ViewData["CurrentSort"]"
+    asp-route-page="@(Model.PageIndex - 1)"
+    asp-route-keyword="@ViewData["CurrentFilter"]"
+    asp-route-page_size="@ViewData["CurrentPageSize"]"
+    class="btn btn-outline-dark @prevDisabled">
+        Previous
+</a>
+@for (int pageNumber = Model.StartPage; pageNumber <= Model.EndPage; pageNumber++)
+{
+    <a asp-action="Index"
+        asp-route-sort_order="@ViewData["CurrentSort"]"
+        asp-route-page="@pageNumber"
+        asp-route-keyword="@ViewData["CurrentFilter"]"
+        asp-route-page_size="@ViewData["CurrentPageSize"]"
+        class="btn @isCurrentPage(pageNumber)">
+            @pageNumber
+    </a>
+}
+<a asp-action="Index"
+    asp-route-sort_order="@ViewData["CurrentSort"]"
+    asp-route-page="@(Model.PageIndex + 1)"
+    asp-route-keyword="@ViewData["CurrentFilter"]"
+    asp-route-page_size="@ViewData["CurrentPageSize"]"
+    class="btn btn-outline-dark @nextDisabled">
+        Next
+</a>
+<a asp-action="Index"
+    asp-route-sort_order="@ViewData["CurrentSort"]"
+    asp-route-page="@(Model.TotalPages)"
+    asp-route-keyword="@ViewData["CurrentFilter"]"
+    asp-route-page_size="@ViewData["CurrentPageSize"]"
+    class="btn btn-outline-dark @bottomtDisabled">
+        >>
+</a>
+
+@{
+    var currentPageSize = (int?)ViewData["CurrentPageSize"] is not null ? ViewData["CurrentPageSize"] : 5;
+    List<SelectListItem> listPageSize = new List<SelectListItem>();
+    for (int i = 0; i < Model.TotalPages; i++)
+    {
+        listPageSize.Add(new SelectListItem() {
+            Value = (i + 1).ToString(),
+            Text = (i + 1).ToString(),
+            Disabled = (i + 1) == Model.PageSize,
+            Selected = (i + 1) == Model.PageSize });
+    }
+}
+
+<form asp-action="Index">
+    <select name="page_size" class="form-control">
+        @for (int i = 0; i < Model.TotalPages / 10; i++)
+        {
+            <option onchange="" value="@((i+1)*10)" selected="@(i+1 == 6 ? true: false)">@((i+1)*10)</option>
+        }
+    </select>
+</form>

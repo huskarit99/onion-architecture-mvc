@@ -1,0 +1,12 @@
+D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\Domain.Entities.deps.json
+D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\Domain.Entities.dll
+D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\ref\Domain.Entities.dll
+D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\Domain.Entities.pdb
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.AssemblyInfoInputs.cache
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.AssemblyInfo.cs
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.csproj.CoreCompileInputs.cache
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.dll
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\ref\Domain.Entities.dll
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.pdb
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.csproj.AssemblyReference.cache
