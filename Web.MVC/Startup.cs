@@ -38,7 +38,7 @@ namespace Web.MVC
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
             services.AddDbContext<TestDBContext>(
-        options => options.UseSqlServer("Data Source=VN0014\\MSSQLSERVER01;Initial Catalog=TestDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
+        options => options.UseSqlServer("Data Source=test-database.database.windows.net;Initial Catalog=TestDB;Persist Security Info=True;User ID=huskarit99;Password=Admin1999;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;"));
            
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductService, ProductService>();

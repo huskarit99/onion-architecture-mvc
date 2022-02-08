@@ -20,6 +20,7 @@ namespace Web.MVC.Controllers
         }
 
         // GET: Categories
+        [HttpGet("categories")]
         public async Task<IActionResult> Index()
         {
             var testDBContext = _context.Categories.Include(c => c.Parent);

@@ -9,4 +9,3 @@ D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.cs
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.dll
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\ref\Domain.Entities.dll
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.pdb
-D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.csproj.AssemblyReference.cache

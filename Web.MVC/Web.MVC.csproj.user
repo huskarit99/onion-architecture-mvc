@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Infrastructure.Data.MSSQL.TestDBContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>D:\demo\OnionArchitectureMVC\Web.MVC\Properties\PublishProfiles\WebMVC20220207162230 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

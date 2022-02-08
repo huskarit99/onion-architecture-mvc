@@ -1,0 +1,17 @@
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Infrastructure.Data.MSSQL.deps.json
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Infrastructure.Data.MSSQL.dll
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\ref\Infrastructure.Data.MSSQL.dll
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Infrastructure.Data.MSSQL.pdb
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Domain.Entities.dll
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Domain.Interfaces.dll
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Domain.Entities.pdb
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\bin\Release\net5.0\Domain.Interfaces.pdb
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.csproj.AssemblyReference.cache
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.AssemblyInfoInputs.cache
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.AssemblyInfo.cs
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.csproj.CoreCompileInputs.cache
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.csproj.CopyComplete
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.dll
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\ref\Infrastructure.Data.MSSQL.dll
+D:\demo\OnionArchitectureMVC\Infrastructure.Data.MSSQL\obj\Release\net5.0\Infrastructure.Data.MSSQL.pdb

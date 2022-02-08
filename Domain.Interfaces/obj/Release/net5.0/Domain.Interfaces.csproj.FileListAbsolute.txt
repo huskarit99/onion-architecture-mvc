@@ -1,0 +1,12 @@
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\bin\Release\net5.0\Domain.Interfaces.deps.json
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\bin\Release\net5.0\Domain.Interfaces.dll
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\bin\Release\net5.0\ref\Domain.Interfaces.dll
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\bin\Release\net5.0\Domain.Interfaces.pdb
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.csproj.AssemblyReference.cache
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.AssemblyInfoInputs.cache
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.AssemblyInfo.cs
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.csproj.CoreCompileInputs.cache
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.dll
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\ref\Domain.Interfaces.dll
+D:\demo\OnionArchitectureMVC\Domain.Interfaces\obj\Release\net5.0\Domain.Interfaces.pdb
