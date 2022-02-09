@@ -4,6 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
+@section Styles {
+<style>
+    .page-number {
+        margin-right: 10px
+    }
+</style>
+    
+}
 
 @section Scripts {
     <script type="text/javascript">
@@ -134,63 +142,63 @@
     };
 }
 
-
-<a asp-action="Index"
-   asp-route-sort_order="@ViewData["CurrentSort"]"
-   asp-route-page="1"
-   asp-route-keyword="@ViewData["CurrentFilter"]"
-   asp-route-page_size="@ViewData["CurrentPageSize"]"
-   class="btn btn-outline-dark @topDisabled">
-    <<
-</a>
-<a asp-action="Index"
-   asp-route-sort_order="@ViewData["CurrentSort"]"
-   asp-route-page="@(Model.PageIndex - 1)"
-   asp-route-keyword="@ViewData["CurrentFilter"]"
-   asp-route-page_size="@ViewData["CurrentPageSize"]"
-   class="btn btn-outline-dark @prevDisabled">
-    Previous
-</a>
-@for (int pageNumber = Model.StartPage; pageNumber <= Model.EndPage; pageNumber++)
-{
+<div style="display: flex">
     <a asp-action="Index"
        asp-route-sort_order="@ViewData["CurrentSort"]"
-       asp-route-page="@pageNumber"
+       asp-route-page="1"
        asp-route-keyword="@ViewData["CurrentFilter"]"
        asp-route-page_size="@ViewData["CurrentPageSize"]"
-       class="btn @isCurrentPage(pageNumber)">
-        @pageNumber
+       class="page-number btn btn-outline-dark @topDisabled">
+        <<
     </a>
-}
-<a asp-action="Index"
-   asp-route-sort_order="@ViewData["CurrentSort"]"
-   asp-route-page="@(Model.PageIndex + 1)"
-   asp-route-keyword="@ViewData["CurrentFilter"]"
-   asp-route-page_size="@ViewData["CurrentPageSize"]"
-   class="btn btn-outline-dark @nextDisabled">
-    Next
-</a>
-<a asp-action="Index"
-   asp-route-sort_order="@ViewData["CurrentSort"]"
-   asp-route-page="@(Model.TotalPages)"
-   asp-route-keyword="@ViewData["CurrentFilter"]"
-   asp-route-page_size="@ViewData["CurrentPageSize"]"
-   class="btn btn-outline-dark @bottomtDisabled">
-    >>
-</a>
+    <a asp-action="Index"
+       asp-route-sort_order="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.PageIndex - 1)"
+       asp-route-keyword="@ViewData["CurrentFilter"]"
+       asp-route-page_size="@ViewData["CurrentPageSize"]"
+       class="page-number btn btn-outline-dark @prevDisabled">
+        Previous
+    </a>
+    @for (int pageNumber = Model.StartPage; pageNumber <= Model.EndPage; pageNumber++)
+    {
+        <a asp-action="Index"
+           asp-route-sort_order="@ViewData["CurrentSort"]"
+           asp-route-page="@pageNumber"
+           asp-route-keyword="@ViewData["CurrentFilter"]"
+           asp-route-page_size="@ViewData["CurrentPageSize"]"
+           class="page-number btn @isCurrentPage(pageNumber)">
+            @pageNumber
+        </a>
+    }
+    <a asp-action="Index"
+       asp-route-sort_order="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.PageIndex + 1)"
+       asp-route-keyword="@ViewData["CurrentFilter"]"
+       asp-route-page_size="@ViewData["CurrentPageSize"]"
+       class="page-number btn btn-outline-dark @nextDisabled">
+        Next
+    </a>
+    <a asp-action="Index"
+       asp-route-sort_order="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.TotalPages)"
+       asp-route-keyword="@ViewData["CurrentFilter"]"
+       asp-route-page_size="@ViewData["CurrentPageSize"]"
+       class="page-number btn btn-outline-dark @bottomtDisabled">
+        >>
+    </a>
 
-<form asp-action="Index">
-    <select id="selection" name="page_size" class="form-control">
-        @for (int i = 0; i < Model.TotalItems / 5; i++)
-        {
-            <option 
-                    id="select@(i)" 
-                    value="@((i+1)*5)" 
-                    selected="@((i+1)*5 == (int)currentPageSize 
-                        ? true
-                        : false)">
-                @((i+1)*5)
-            </option>
-        }
-    </select>
-</form>
+    <div style="display: flex; width: 100%; justify-content: flex-end">
+        <select id="selection" name="page_size" class="form-control" style="width: 80px; text-align: center">
+            @for (int i = 0; i < Model.TotalItems / 5; i++)
+            {
+                <option id="select@(i)"
+                        value="@((i+1)*5)"
+                        selected="@((i+1)*5 == (int)currentPageSize
+                    ? true
+                    : false)">
+                    @((i+1)*5)
+                </option>
+            }
+        </select>
+    </div>
+</div>
