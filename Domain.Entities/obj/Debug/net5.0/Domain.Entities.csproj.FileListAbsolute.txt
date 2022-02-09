@@ -2,6 +2,7 @@ D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\Domain.Entities.de
 D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\Domain.Entities.dll
 D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\ref\Domain.Entities.dll
 D:\demo\OnionArchitectureMVC\Domain.Entities\bin\Debug\net5.0\Domain.Entities.pdb
+D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.csproj.AssemblyReference.cache
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.AssemblyInfoInputs.cache
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.AssemblyInfo.cs

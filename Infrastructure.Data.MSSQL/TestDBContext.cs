@@ -25,7 +25,7 @@ namespace Infrastructure.Data.MSSQL
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=test-database.database.windows.net;Initial Catalog=TestDB;Persist Security Info=True;User ID=huskarit99;Password=Admin1999;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;");
+                optionsBuilder.UseSqlServer("Data Source=test-database.database.windows.net;Initial Catalog=TestDB;User ID=huskarit99;Password=Admin1999;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             }
         }
 
