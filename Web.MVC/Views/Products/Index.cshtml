@@ -4,6 +4,28 @@
     ViewData["Title"] = "Index";
 }
 
+
+@section Scripts {
+    <script type="text/javascript">
+        $("#selection").change((e) => {
+            const ENDPOINT_URL = window.location.origin + window.location.pathname;
+            const url = new URL(ENDPOINT_URL);
+            var currentSort = '@ViewData["CurrentSort"]';
+            var currentFilter = '@ViewData["CurrentFilter"]';
+            if (currentSort)
+                url.searchParams.append("sort_order", currentSort);
+            if (currentFilter)
+                url.searchParams.append("keyword", currentFilter);
+            url.searchParams.append("page_size", $(e.target).val());
+            console.log(url);
+            window.location.replace(url);
+      //      let params = new URLSearchParams(window.location.origin + window.location.pathname);
+      //      params.append("page_size", $(e.target).val());
+      //      window.location.replace(params);
+        })
+    </script>
+}
+
 <h1>Index</h1>
 
 <p>
@@ -25,51 +47,45 @@
         <tr>
             <th>
                 <a asp-action="Index"
-                    asp-route-sort_order="@ViewData["NameSortParm"]"
-                    asp-route-page="@Model.PageIndex"
-                    asp-route-keyword="@ViewData["CurrentFilter"]"
-                    asp-route-page_size="@ViewData["CurrentPageSize"]"
-                    >Name</a>
+                   asp-route-sort_order="@ViewData["NameSortParm"]"
+                   asp-route-page="@Model.PageIndex"
+                   asp-route-keyword="@ViewData["CurrentFilter"]"
+                   asp-route-page_size="@ViewData["CurrentPageSize"]">Name</a>
             </th>
             <th>
                 <a asp-action="Index"
-                    asp-route-sort_order="@ViewData["PhoneSortParm"]"
-                    asp-route-page="@Model.PageIndex"
-                    asp-route-keyword="@ViewData["CurrentFilter"]"
-                    asp-route-page_size="@ViewData["CurrentPageSize"]"
-                    >Phone</a>
+                   asp-route-sort_order="@ViewData["PhoneSortParm"]"
+                   asp-route-page="@Model.PageIndex"
+                   asp-route-keyword="@ViewData["CurrentFilter"]"
+                   asp-route-page_size="@ViewData["CurrentPageSize"]">Phone</a>
             </th>
             <th>
                 <a asp-action="Index"
-                    asp-route-sort_order="@ViewData["EmailSortParm"]"
-                    asp-route-page="@Model.PageIndex"
-                    asp-route-keyword="@ViewData["CurrentFilter"]"
-                    asp-route-page_size="@ViewData["CurrentPageSize"]"
-                    >Email</a>
+                   asp-route-sort_order="@ViewData["EmailSortParm"]"
+                   asp-route-page="@Model.PageIndex"
+                   asp-route-keyword="@ViewData["CurrentFilter"]"
+                   asp-route-page_size="@ViewData["CurrentPageSize"]">Email</a>
             </th>
             <th>
                 <a asp-action="Index"
-                    asp-route-sort_order="@ViewData["TextSortParm"]"
-                    asp-route-page="@Model.PageIndex"
-                    asp-route-keyword="@ViewData["CurrentFilter"]"
-                    asp-route-page_size="@ViewData["CurrentPageSize"]"
-                    >Text</a>
+                   asp-route-sort_order="@ViewData["TextSortParm"]"
+                   asp-route-page="@Model.PageIndex"
+                   asp-route-keyword="@ViewData["CurrentFilter"]"
+                   asp-route-page_size="@ViewData["CurrentPageSize"]">Text</a>
             </th>
             <th>
                 <a asp-action="Index"
-                    asp-route-sort_order="@ViewData["CurrencySortParm"]"
-                    asp-route-page="@Model.PageIndex"
-                    asp-route-keyword="@ViewData["CurrentFilter"]"
-                    asp-route-page_size="@ViewData["CurrentPageSize"]"
-                    >Currency</a>
+                   asp-route-sort_order="@ViewData["CurrencySortParm"]"
+                   asp-route-page="@Model.PageIndex"
+                   asp-route-keyword="@ViewData["CurrentFilter"]"
+                   asp-route-page_size="@ViewData["CurrentPageSize"]">Currency</a>
             </th>
             <th>
                 <a asp-action="Index"
-                    asp-route-sort_order="@ViewData["CategoryIdSortParm"]"
-                    asp-route-page="@Model.PageIndex"
-                    asp-route-keyword="@ViewData["CurrentFilter"]"
-                    asp-route-page_size="@ViewData["CurrentPageSize"]"
-                    >Category</a>
+                   asp-route-sort_order="@ViewData["CategoryIdSortParm"]"
+                   asp-route-page="@Model.PageIndex"
+                   asp-route-keyword="@ViewData["CurrentFilter"]"
+                   asp-route-page_size="@ViewData["CurrentPageSize"]">Category</a>
             </th>
             <th></th>
         </tr>
@@ -111,6 +127,7 @@
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
     var topDisabled = Model.PageIndex == 1 ? "disabled" : "";
     var bottomtDisabled = Model.PageIndex == Model.TotalPages ? "disabled" : "";
+    var currentPageSize = ViewData["CurrentPageSize"] is not null ? ViewData["CurrentPageSize"] : 5;
     string isCurrentPage(int pageNumber)
     {
         return pageNumber == Model.PageIndex ? "btn-outline-danger" : "btn-outline-dark";
@@ -119,67 +136,61 @@
 
 
 <a asp-action="Index"
-    asp-route-sort_order="@ViewData["CurrentSort"]"
-    asp-route-page="1"
-    asp-route-keyword="@ViewData["CurrentFilter"]"
-    asp-route-page_size="@ViewData["CurrentPageSize"]"
-    class="btn btn-outline-dark @topDisabled">
-        <<
+   asp-route-sort_order="@ViewData["CurrentSort"]"
+   asp-route-page="1"
+   asp-route-keyword="@ViewData["CurrentFilter"]"
+   asp-route-page_size="@ViewData["CurrentPageSize"]"
+   class="btn btn-outline-dark @topDisabled">
+    <<
 </a>
 <a asp-action="Index"
-    asp-route-sort_order="@ViewData["CurrentSort"]"
-    asp-route-page="@(Model.PageIndex - 1)"
-    asp-route-keyword="@ViewData["CurrentFilter"]"
-    asp-route-page_size="@ViewData["CurrentPageSize"]"
-    class="btn btn-outline-dark @prevDisabled">
-        Previous
+   asp-route-sort_order="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.PageIndex - 1)"
+   asp-route-keyword="@ViewData["CurrentFilter"]"
+   asp-route-page_size="@ViewData["CurrentPageSize"]"
+   class="btn btn-outline-dark @prevDisabled">
+    Previous
 </a>
 @for (int pageNumber = Model.StartPage; pageNumber <= Model.EndPage; pageNumber++)
 {
     <a asp-action="Index"
-        asp-route-sort_order="@ViewData["CurrentSort"]"
-        asp-route-page="@pageNumber"
-        asp-route-keyword="@ViewData["CurrentFilter"]"
-        asp-route-page_size="@ViewData["CurrentPageSize"]"
-        class="btn @isCurrentPage(pageNumber)">
-            @pageNumber
+       asp-route-sort_order="@ViewData["CurrentSort"]"
+       asp-route-page="@pageNumber"
+       asp-route-keyword="@ViewData["CurrentFilter"]"
+       asp-route-page_size="@ViewData["CurrentPageSize"]"
+       class="btn @isCurrentPage(pageNumber)">
+        @pageNumber
     </a>
 }
 <a asp-action="Index"
-    asp-route-sort_order="@ViewData["CurrentSort"]"
-    asp-route-page="@(Model.PageIndex + 1)"
-    asp-route-keyword="@ViewData["CurrentFilter"]"
-    asp-route-page_size="@ViewData["CurrentPageSize"]"
-    class="btn btn-outline-dark @nextDisabled">
-        Next
+   asp-route-sort_order="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.PageIndex + 1)"
+   asp-route-keyword="@ViewData["CurrentFilter"]"
+   asp-route-page_size="@ViewData["CurrentPageSize"]"
+   class="btn btn-outline-dark @nextDisabled">
+    Next
 </a>
 <a asp-action="Index"
-    asp-route-sort_order="@ViewData["CurrentSort"]"
-    asp-route-page="@(Model.TotalPages)"
-    asp-route-keyword="@ViewData["CurrentFilter"]"
-    asp-route-page_size="@ViewData["CurrentPageSize"]"
-    class="btn btn-outline-dark @bottomtDisabled">
-        >>
+   asp-route-sort_order="@ViewData["CurrentSort"]"
+   asp-route-page="@(Model.TotalPages)"
+   asp-route-keyword="@ViewData["CurrentFilter"]"
+   asp-route-page_size="@ViewData["CurrentPageSize"]"
+   class="btn btn-outline-dark @bottomtDisabled">
+    >>
 </a>
 
-@{
-    var currentPageSize = (int?)ViewData["CurrentPageSize"] is not null ? ViewData["CurrentPageSize"] : 5;
-    List<SelectListItem> listPageSize = new List<SelectListItem>();
-    for (int i = 0; i < Model.TotalPages; i++)
-    {
-        listPageSize.Add(new SelectListItem() {
-            Value = (i + 1).ToString(),
-            Text = (i + 1).ToString(),
-            Disabled = (i + 1) == Model.PageSize,
-            Selected = (i + 1) == Model.PageSize });
-    }
-}
-
 <form asp-action="Index">
-    <select name="page_size" class="form-control">
-        @for (int i = 0; i < Model.TotalPages / 10; i++)
+    <select id="selection" name="page_size" class="form-control">
+        @for (int i = 0; i < Model.TotalItems / 5; i++)
         {
-            <option onchange="" value="@((i+1)*10)" selected="@(i+1 == 6 ? true: false)">@((i+1)*10)</option>
+            <option 
+                    id="select@(i)" 
+                    value="@((i+1)*5)" 
+                    selected="@((i+1)*5 == (int)currentPageSize 
+                        ? true
+                        : false)">
+                @((i+1)*5)
+            </option>
         }
     </select>
 </form>

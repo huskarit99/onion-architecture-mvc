@@ -20,7 +20,7 @@ namespace Web.MVC.Controllers
             string sort_order,
             string keyword,
             int? page = 1,
-            int? page_size = 6)
+            int? page_size = 5)
         {
             ViewData["CurrentSort"] = sort_order;
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sort_order) || sort_order == "name-asc" ? "name-desc" : "name-asc";

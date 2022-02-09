@@ -16,13 +16,14 @@ namespace Web.MVC
         public int EndPage { get; private set; }
         public int StartIndex { get; private set; }
         public int EndIndex { get; private set; }
+        public int TotalItems { get; private set; }
         public IEnumerable<int> Pages { get; private set; }
 
 
         public PaginatedList(List<T> items, int count, int pageIndex, int pageSize)
         {
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
-
+            TotalItems = count;
             // ensure current page isn't out of range
             if (pageIndex < 1)
             {
