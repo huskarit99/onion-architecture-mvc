@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {}
+    "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {}
   },
   "projects": {
-    "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
+    "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj",
+        "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj",
         "projectName": "Domain.Entities",
-        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj",
+        "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj",
         "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\obj\\",
+        "outputPath": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+    "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+        "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj",
         "projectName": "Domain.Interfaces",
-        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+        "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj",
         "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\obj\\",
+        "outputPath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {
+    "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
+        "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
         "projectName": "Infrastructure.Data.MSSQL",
-        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
+        "projectPath": "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
         "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\obj\\",
+        "outputPath": "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,11 +146,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
-                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj"
+              "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj": {
+                "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj"
               },
-              "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
-                "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj"
+              "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+                "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj"
               }
             }
           }

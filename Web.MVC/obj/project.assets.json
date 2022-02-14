@@ -10335,11 +10335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj",
+      "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Web.MVC\\Web.MVC.csproj",
       "projectName": "Web.MVC",
-      "projectPath": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj",
+      "projectPath": "D:\\github\\onion-architecture-mvc\\Web.MVC\\Web.MVC.csproj",
       "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-      "outputPath": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\obj\\",
+      "outputPath": "D:\\github\\onion-architecture-mvc\\Web.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10356,11 +10356,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {
-              "projectPath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj"
+            "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj": {
+              "projectPath": "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj"
             },
-            "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj": {
-              "projectPath": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj"
+            "D:\\github\\onion-architecture-mvc\\Services\\Services.csproj": {
+              "projectPath": "D:\\github\\onion-architecture-mvc\\Services\\Services.csproj"
             }
           }
         }

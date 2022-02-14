@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {}
+    "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj": {}
   },
   "projects": {
-    "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+    "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+        "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj",
         "projectName": "Domain.Interfaces",
-        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+        "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj",
         "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\obj\\",
+        "outputPath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",

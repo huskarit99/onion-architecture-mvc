@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "75KT/x53/2v6K+01So4eEToU4Ej4qFMZsqXf6cv2s7lxiGnmZqGWDy7l4lfeUlNTBqOWsUKj6g7RvQeZijAO5w==",
+  "dgSpecHash": "nRQptUcvPq2xBRQjjFcqjCxZQE+vznOthPJRLE1PlPKklAb1l/UgYtRQxagzzKOactWoG5VRtpQ80HE/jZNztA==",
   "success": true,
-  "projectFilePath": "D:\\demo\\OnionArchitectureMVC\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
+  "projectFilePath": "D:\\github\\onion-architecture-mvc\\Infrastructure.Data.MSSQL\\Infrastructure.Data.MSSQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

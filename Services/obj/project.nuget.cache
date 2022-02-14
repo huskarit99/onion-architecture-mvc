@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MZztoRsgwSqgkT/CRL04NIomeJr5VivO1jOJ7XwhRGK0Ga5S3xcNksAy/Tqxxr1bJ0sIKD3wJdEjP9B4zUaK8A==",
+  "dgSpecHash": "SEJMbIaKYMRmQGnIg6aZaQbK3idZ8c+9/HNsPK8s0uwgIx++BSYW7BMezDv4hHTGaodqt2mp5jWDybp3AgXkjg==",
   "success": true,
-  "projectFilePath": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj",
+  "projectFilePath": "D:\\github\\onion-architecture-mvc\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

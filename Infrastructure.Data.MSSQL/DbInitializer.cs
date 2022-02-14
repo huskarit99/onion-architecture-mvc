@@ -18,8 +18,8 @@ namespace Infrastructure.Data.MSSQL
             {
 				return;
             }
-			
 			List<Category> categories = context.Categories.ToList();
+			
 			for (int i = 0; i < categories.Count; i++) isCategoryChildren.Add(false);
 
 			/// <summary>

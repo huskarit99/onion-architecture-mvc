@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {}
+    "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj": {}
   },
   "projects": {
-    "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
+    "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj",
+        "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj",
         "projectName": "Domain.Entities",
-        "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj",
+        "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj",
         "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-        "outputPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\obj\\",
+        "outputPath": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",

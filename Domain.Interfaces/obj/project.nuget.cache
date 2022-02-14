@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RsRaUjw0X3cFYrmsQL0Oai6Gf2Ob/H27Ta4a/UM2tG+52TVpiB6aDjz7e8nfMNzRhEMDu24J+0wI5MqZkw168Q==",
+  "dgSpecHash": "48//EMeEBIBm1jnpeMuyhBP8s+DfBiQEOEsWhY3+lnwclBiyK5PL4E5WWVNIgARiMFstDAtbXTpNFh9CDpW5sA==",
   "success": true,
-  "projectFilePath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj",
+  "projectFilePath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

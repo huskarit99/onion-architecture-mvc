@@ -54,6 +54,9 @@
     <thead>
         <tr>
             <th>
+                <p>No.</p>
+            </th>
+            <th>
                 <a asp-action="Index"
                    asp-route-sort_order="@ViewData["NameSortParm"]"
                    asp-route-page="@Model.PageIndex"
@@ -99,9 +102,13 @@
         </tr>
     </thead>
     <tbody>
+        @{ int numberRow = 0; }
         @foreach (var item in Model)
         {
             <tr>
+                <td>
+                    @numberRow
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
@@ -126,6 +133,7 @@
                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                 </td>
             </tr>
+            numberRow++;
         }
     </tbody>
 </table>

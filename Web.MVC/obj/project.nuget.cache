@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qAbJlHFeTC942hw3qcZJswkKrvHhevSfHL8G7DX4LRl7x3ml//W8qaXVmvt0Th38JP9u/aukw0og9bCNFejBbQ==",
+  "dgSpecHash": "DcdMFvsv7cO4MfjeFTu3IFVNImBNQ1AnFW8fZlpfUZHDEwU6qwz40oEcyMTSyD40ROkyuUQs98n/NiQu7HaR5A==",
   "success": true,
-  "projectFilePath": "D:\\demo\\OnionArchitectureMVC\\Web.MVC\\Web.MVC.csproj",
+  "projectFilePath": "D:\\github\\onion-architecture-mvc\\Web.MVC\\Web.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hocnt\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

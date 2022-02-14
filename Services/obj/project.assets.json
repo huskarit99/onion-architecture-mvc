@@ -7795,11 +7795,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\github\\onion-architecture-mvc\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\demo\\OnionArchitectureMVC\\Services\\Services.csproj",
+      "projectPath": "D:\\github\\onion-architecture-mvc\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\hocnt\\.nuget\\packages\\",
-      "outputPath": "D:\\demo\\OnionArchitectureMVC\\Services\\obj\\",
+      "outputPath": "D:\\github\\onion-architecture-mvc\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hocnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7816,11 +7816,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj": {
-              "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Entities\\Domain.Entities.csproj"
+            "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj": {
+              "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Entities\\Domain.Entities.csproj"
             },
-            "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj": {
-              "projectPath": "D:\\demo\\OnionArchitectureMVC\\Domain.Interfaces\\Domain.Interfaces.csproj"
+            "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj": {
+              "projectPath": "D:\\github\\onion-architecture-mvc\\Domain.Interfaces\\Domain.Interfaces.csproj"
             }
           }
         }
