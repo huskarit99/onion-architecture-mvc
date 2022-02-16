@@ -25,11 +25,7 @@
             if (currentFilter)
                 url.searchParams.append("keyword", currentFilter);
             url.searchParams.append("page_size", $(e.target).val());
-            console.log(url);
             window.location.replace(url);
-      //      let params = new URLSearchParams(window.location.origin + window.location.pathname);
-      //      params.append("page_size", $(e.target).val());
-      //      window.location.replace(params);
         })
     </script>
 }
@@ -107,7 +103,7 @@
         {
             <tr>
                 <td>
-                    @numberRow
+                    @(Model.PageSize * (Model.PageIndex - 1) + numberRow)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
