@@ -14,7 +14,6 @@ D:\github\onion-architecture-mvc\Domain.Interfaces\bin\Debug\net5.0\Domain.Inter
 D:\github\onion-architecture-mvc\Domain.Interfaces\bin\Debug\net5.0\Domain.Interfaces.dll
 D:\github\onion-architecture-mvc\Domain.Interfaces\bin\Debug\net5.0\ref\Domain.Interfaces.dll
 D:\github\onion-architecture-mvc\Domain.Interfaces\bin\Debug\net5.0\Domain.Interfaces.pdb
-D:\github\onion-architecture-mvc\Domain.Interfaces\obj\Debug\net5.0\Domain.Interfaces.csproj.AssemblyReference.cache
 D:\github\onion-architecture-mvc\Domain.Interfaces\obj\Debug\net5.0\Domain.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
 D:\github\onion-architecture-mvc\Domain.Interfaces\obj\Debug\net5.0\Domain.Interfaces.AssemblyInfoInputs.cache
 D:\github\onion-architecture-mvc\Domain.Interfaces\obj\Debug\net5.0\Domain.Interfaces.AssemblyInfo.cs
