@@ -6,45 +6,7 @@
 
 @section Scripts {
     <script type="text/javascript">
-        const ModalDeleteProduct = async () => {
-            const productId = @Model.Id;
-            await Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, delete it!'
-            }).then(async (result) => {
-                if (result.isConfirmed) {
-                    await fetch(window.location.origin + "/products/delete?id=" + productId,
-                        {
-                            method: 'POST',
-                            headers: {
-                                'Accept': 'application/json',
-                                'Content-Type': 'application/json'
-                            },
-                        })
-                        .then(data => {
-                            Swal.fire(
-                                'Deleted!',
-                                'Your file has been deleted.',
-                                'success'
-                            )
-                        })
-                        .catch((error) => {
-                            console.log(error);
-                            Swal.fire(
-                                'Not Yet Deleted!',
-                                'Some thing went wrong.',
-                                'error'
-                            )
-                        });
-
-                }
-            })
-        }
+        
     </script>
 }
 

@@ -10,3 +10,15 @@ D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.cs
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.dll
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\ref\Domain.Entities.dll
 D:\demo\OnionArchitectureMVC\Domain.Entities\obj\Debug\net5.0\Domain.Entities.pdb
+D:\github\onion-architecture-mvc\Domain.Entities\bin\Debug\net5.0\Domain.Entities.deps.json
+D:\github\onion-architecture-mvc\Domain.Entities\bin\Debug\net5.0\Domain.Entities.dll
+D:\github\onion-architecture-mvc\Domain.Entities\bin\Debug\net5.0\ref\Domain.Entities.dll
+D:\github\onion-architecture-mvc\Domain.Entities\bin\Debug\net5.0\Domain.Entities.pdb
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.csproj.AssemblyReference.cache
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.AssemblyInfoInputs.cache
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.AssemblyInfo.cs
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.csproj.CoreCompileInputs.cache
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.dll
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\ref\Domain.Entities.dll
+D:\github\onion-architecture-mvc\Domain.Entities\obj\Debug\net5.0\Domain.Entities.pdb

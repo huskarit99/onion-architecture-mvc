@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ResourceModel\Response\" />
+  </ItemGroup>
+
 </Project>

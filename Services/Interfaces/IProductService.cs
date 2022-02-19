@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Services.ResourceModel.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,5 +24,6 @@ namespace Services.Interfaces
         public bool ProductExists(int id);
         public bool UpdateOne(Product product);
         public bool DeleteOneById(int id);
+        public bool DeleteManyById(List<int> listProductId);
     }
 }

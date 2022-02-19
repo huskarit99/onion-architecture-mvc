@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SEJMbIaKYMRmQGnIg6aZaQbK3idZ8c+9/HNsPK8s0uwgIx++BSYW7BMezDv4hHTGaodqt2mp5jWDybp3AgXkjg==",
+  "dgSpecHash": "1apJZ4zdpKsqrLXnslqr93kADxzgK5TpJWLojAXEuaxllHQhmGxBmbNxMBiL0tLdR8ObJbP0t3lc5U/KjrRxBA==",
   "success": true,
   "projectFilePath": "D:\\github\\onion-architecture-mvc\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.session\\2.2.0\\microsoft.aspnetcore.session.2.2.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
     "C:\\Users\\hocnt\\.nuget\\packages\\microsoft.codeanalysis.common\\2.8.0\\microsoft.codeanalysis.common.2.8.0.nupkg.sha512",

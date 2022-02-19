@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Services.Enums;
 using Services.Interfaces;
+using Services.ResourceModel.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,10 @@ namespace Services.Concretes
                 filter: filter,
                 orderBy: orderBy,
                 asNoTracking: true);
+
+            int totalPages = (int)Math.Ceiling((int)products.Count() / (double)pageSize);
+            if (pageIndex > totalPages)
+                pageIndex = totalPages;
 
             return new PaginatedList<Product>(
                 (List<Product>)await _unitOfWork.Repository<Product>().GetAsync(
@@ -118,6 +123,21 @@ namespace Services.Concretes
             {
                 _unitOfWork.Repository<Product>().DeleteOne(id);
                 _unitOfWork.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+        public bool DeleteManyById(List<int> listProductId)
+        {
+            try
+            {
+                foreach (var id in listProductId)
+                {
+                    DeleteOneById(id);
+                }
                 return true;
             }
             catch (Exception e)

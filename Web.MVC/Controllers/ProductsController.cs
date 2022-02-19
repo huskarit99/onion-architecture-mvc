@@ -3,16 +3,25 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Domain.Entities;
 using Services.Interfaces;
+using System.Text;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using System.Text.Json;
+using Web.MVC.Models;
+using Services.ResourceModel.Request;
 
 namespace Web.MVC.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private ISession _session => _httpContextAccessor.HttpContext.Session;
 
-        public ProductsController(IProductService productService)
+        public ProductsController(IProductService productService, IHttpContextAccessor httpContextAccessor)
         {
             _productService = productService;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpGet("products")]
@@ -22,6 +31,7 @@ namespace Web.MVC.Controllers
             int? page = 1,
             int? page_size = 5)
         {
+        //    Session[""]
             ViewData["CurrentSort"] = sort_order;
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sort_order) || sort_order == "name-asc" ? "name-desc" : "name-asc";
             ViewData["PhoneSortParm"] = sort_order == "phone-asc" ? "phone-desc" : "phone-asc";
@@ -127,10 +137,15 @@ namespace Web.MVC.Controllers
 
         // POST: Products/Delete/5
         [HttpPost("products/delete"), ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteOneById(int id)
         {
             _productService.DeleteOneById(id);
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpPost("products/deletes")]
+        public IActionResult DeleteManyById([FromBody]DeleteManyByIdRequest deleteManyByIdRequest)
+        {
+            _productService.DeleteManyById(deleteManyByIdRequest.ListProductId);
             return RedirectToAction(nameof(Index));
         }
     }
